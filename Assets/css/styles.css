@@ -1,0 +1,85 @@
+body {
+  font-size: 1em;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+/*
+Media Queries
+0-300 px, cat width = 100%, one cat wide
+301-400 px, width = 50%, two cats wide
+401-660 px, width = 33.3%, three cats wide
+661-945 px, width = 25%, four cats wide
+946-1190 px, width = 20%, five cats wide
+1191+ px, width = 16.667%, six cats wide
+*/
+
+li {
+  float: left;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1191px){
+  li {
+    width: 16.6%;
+  }
+}
+
+@media (max-width: 1190px) {
+  li {
+    width: 20%;
+  }
+}
+
+@media (max-width: 945px) {
+  li {
+    width: 25%;
+  }
+}
+
+@media (max-width: 660px) {
+  li {
+    width: 33.3%;
+  }
+}
+
+@media (max-width: 400px) {
+  li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 300px) {
+  li {
+    width: 100%;
+  }
+}
+
+
+.around-name {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(71,163,218,0.2);
+  z-index: 3;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 10px;
+  text-align: center;
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  /*width: 100%;*/
+  letter-spacing: 2px;
+}
+
+.around-name:hover {
+  opacity: 1;
+}
