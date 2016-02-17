@@ -4,7 +4,7 @@ body {
 }
 
 /*
-Media Queries
+Media Queries- found by dragging the blueprint open and shut, and using chrome to find the width of the screen
 0-300 px, cat width = 100%, one cat wide
 301-400 px, width = 50%, two cats wide
 401-660 px, width = 33.3%, three cats wide
@@ -12,6 +12,10 @@ Media Queries
 946-1190 px, width = 20%, five cats wide
 1191+ px, width = 16.667%, six cats wide
 */
+
+img {
+  width: 100%;
+}
 
 li {
   float: left;
@@ -56,7 +60,6 @@ li {
   }
 }
 
-
 .around-name {
   position: absolute;
   left: 20px;
@@ -65,6 +68,10 @@ li {
   bottom: 20px;
   background: rgba(71,163,218,0.2);
   z-index: 3;
+}
+
+.around-name:hover {
+  opacity: 1;
 }
 
 h3 {
@@ -76,10 +83,6 @@ h3 {
   /*position: absolute;*/
   top: 0;
   left: 0;
-  /*width: 100%;*/
+  width: 100%;
   letter-spacing: 2px;
-}
-
-.around-name:hover {
-  opacity: 1;
 }
