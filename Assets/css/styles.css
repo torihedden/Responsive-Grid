@@ -24,6 +24,9 @@ li {
   z-index: 1;
 }
 
+/*Media Queries Target Cat Image Width and Width of Clicked On/Expanded Cat Image*/
+/*I know it looks like I just copied the blueprint, but I found the break points by resizing the page and writing down where the breakpoints occured.*/
+
 @media (min-width: 1191px){
   li {
     width: 16.6%;
@@ -32,6 +35,8 @@ li {
     width: 33.3%;
   }
 }
+
+/*For greater accuracy in widths, could have used calc(100%/#of cats)*/
 
 @media (max-width: 1190px) {
   li {
@@ -102,4 +107,43 @@ h3 {
   letter-spacing: 2px;
   margin: 22.4px 0px;
   box-sizing: border-box;
+
+}
+
+.header {
+  background: rgb(71,163,218);
+  color: white;
+  font-size: 5em;
+  text-transform: uppercase;
+  text-align: center;
+  height: 30%;
+  padding-top: 8%;
+}
+
+input {
+  font-size: 3em;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 5%;
+}
+
+.cat-button {
+  margin-top: 5%;
+  margin-left: 40%;
+  margin-right: 40%;
+  width: 20%;
+  background: rgb(71,163,218);
+  color: white;
+  padding: 2%;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.cat-button:hover {
+  background: rgb(15, 100, 200);
+  transition: background 0.1s;
 }
