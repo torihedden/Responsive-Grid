@@ -2,7 +2,13 @@ $(document).ready(function(){
   'use strict'
 
   $(".cat-button").click(function(){
-    // console.log(parseInt($(".cat-number").val()));
+
+    if (parseInt($(".cat-number").val()) === 0){
+      console.log("You need cats");
+    } else if (parseInt($(".cat-number").val()) > 24){
+      console.log("too many cats");
+    } else {
+
     $(".cat-prompt").toggle();
 
     var newCat = '<li class = "cat-card">' +
@@ -15,18 +21,13 @@ $(document).ready(function(){
     for (var i = 1; i < parseInt($(".cat-number").val()); i++){
       $("body").append(newCat);
         }
-  });
+      }
+    });
   //closes cat-button .click
 
-  $("li").click(function(){
+    $("li").click(function(){
       $($(this)).toggleClass("expand-view");
-  });
+    });
   //closes li.click
 
 });//closes document.ready
-
-    // if (catNumber == NaN){
-    //   console.log("That's not a number!")
-    // } else {
-    //   console.log(parseInt(catNumber, 10));
-    // }
