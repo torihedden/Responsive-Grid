@@ -4,9 +4,9 @@ $(document).ready(function(){
   $(".cat-button").click(function(){
 
     if (parseInt($(".cat-number").val()) === 0){
-      console.log("You need cats");
+      $(".header").replaceWith("<div class = 'header'>you need cats</div>")
     } else if (parseInt($(".cat-number").val()) > 24){
-      console.log("too many cats");
+      $(".header").replaceWith("<div class = 'header'>too many cats</div>")
     } else {
 
     $(".cat-prompt").toggle();
