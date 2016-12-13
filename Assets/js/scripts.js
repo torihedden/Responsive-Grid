@@ -3,9 +3,12 @@ $(document).ready(function(){
 
   $(".cat-button").click(function(){
 
+    var numberCats = parseInt($(".cat-number").val())
+
+
     if (parseInt($(".cat-number").val()) < 1){
       $(".header").replaceWith("<div class = 'header'>you need cats</div>")
-    } else if (parseInt($(".cat-number").val()) > 24){
+    } else if (parseInt($(".cat-number").val()) > 100){
       $(".header").replaceWith("<div class = 'header'>too many cats</div>")
     } else {
 
